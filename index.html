@@ -102,7 +102,9 @@ nav {
 }
 .nav-links a:hover { color: var(--white); }
 .nav-links a:hover::after { transform: scaleX(1); }
-
+.nav-links a.active::after {
+  transform: scaleX(1) !important;
+}
 .nav-cta {
   background: var(--red); color: var(--white) !important;
   padding: 10px 24px; border-radius: 4px;
@@ -1164,5 +1166,7 @@ function handleCTA() {
   }
 }
 </script>
+  <script src="script.js"></script>
+</body>
 </body>
 </html>
